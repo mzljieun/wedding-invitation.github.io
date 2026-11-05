@@ -1,0 +1,67 @@
+:root {
+  color-scheme: light;
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  color: #4b5046;
+  background: #f8f6f0;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-width: 280px;
+  background: radial-gradient(ellipse at 50% 38%, #fffdf7 0%, #f8f6f0 65%);
+}
+
+.invitation {
+  min-height: 100svh;
+  width: min(100%, 520px);
+  margin: 0 auto;
+  padding: 56px 24px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #858b79;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.illustration { width: 224px; margin: 26px 0 18px; }
+.illustration svg { display: block; width: 100%; height: auto; }
+.prelude { margin: 0 0 13px; font-size: 12px; letter-spacing: 2px; color: #858879; }
+
+h1 {
+  margin: 0;
+  font-family: "AppleMyungjo", "Nanum Myeongjo", "Batang", serif;
+  font-size: clamp(25px, 6.3vw, 30px);
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: -.5px;
+  word-break: keep-all;
+}
+
+.divider { width: 1px; height: 29px; background: #d4d5c6; margin: 25px 0 21px; }
+.message { margin: 0; color: #7d8075; font-size: 13px; line-height: 2.1; word-break: keep-all; }
+.message span { display: inline-block; margin-top: 9px; }
+.signature { margin: 28px 0 44px; font-family: "Baskerville", Georgia, serif; font-size: 22px; font-style: italic; color: #929980; }
+footer { margin-top: auto; color: #96998e; font-size: 10px; letter-spacing: 1px; }
+
+@media (min-width: 600px) {
+  .invitation { padding-top: 65px; }
+  .illustration { width: 240px; margin-top: 30px; }
+}
+
+@media (max-height: 740px) and (max-width: 599px) {
+  .invitation { padding-top: 32px; }
+  .illustration { width: 180px; margin: 18px 0 12px; }
+  .divider { margin: 20px 0 16px; height: 23px; }
+  .signature { margin: 22px 0 32px; }
+}
